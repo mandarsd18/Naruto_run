@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url(green.gif); */
+}
+.game{
+    width: 900px;
+    height: 350px;
+    margin: auto;
+    border: 1px solid saddlebrown;
+    background-image: url(konoha.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#naruto{
+    width: 140px;
+    height: 150px;
+    position: relative;
+    top: 205px;
+    background-image: url(naruto1.gif);
+    background-size: 150px 140px;
+    
+
+    
+}
+.jump{
+    animation: jump 0.5s infinite
+
+}
+@keyframes jump{
+    0%{
+        top: 205px;
+    }
+    30%{
+        top: 150px;
+    }
+    50%{
+        top: 110px;
+    }
+    80%{
+        top: 150px;
+    }
+    100%{
+        top: 205px;
+    }
+}
+#sakura{
+    width: 80px;
+    height: 80px;
+    background-image: url(sakura.png);
+    background-size: 80px 80px;
+    position: relative;
+    left:900px ;
+    top: 120px;
+    animation: sakurablk 3s infinite linear;
+}
+@keyframes sakurablk{
+    0%{
+        left: 900px;
+    }
+    100% {
+        left: -20px;
+    }
+}
